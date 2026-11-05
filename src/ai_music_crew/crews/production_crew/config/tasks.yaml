@@ -1,0 +1,95 @@
+planning_task:
+  description: >
+    {skill_prompt}
+    根据用户的音乐创作需求： {topic}.
+
+    以下是上一轮审核的分组件反馈意见：
+    ---
+    {feedback}
+    ---
+
+    反馈格式说明：每行以 [组件名] 开头。
+    - 看到 "✅ [创作简报] 已通过" → 你不需要修改，直接输出和上一轮相同的内容
+    - 看到 "⚠️ [创作简报] 需要修改：xxx" → 只修改 xxx 指出的具体问题，其他部分保持不变
+
+    生成一份歌曲创作简报。用户可能不懂乐理，所以你需要把自然语言需求翻译成后续作词人可以使用的创作方向。
+  expected_output: >
+    只输出一个 JSON 对象，不要用 ```json``` 代码块包裹，不要加任何解释文字。
+    严格按照以下 JSON 结构输出：
+    {
+      "title_suggestion": "歌曲标题",
+      "theme": "核心主题一句话",
+      "mood_keywords": ["情绪1", "情绪2", "情绪3"],
+      "bpm_range": "65-78",
+      "key_suggestion": "G大调",
+      "style_direction": "风格方向",
+      "vocal_advice": "人声建议",
+      "lyric_imagery_keywords": ["意象1", "意象2", "意象3", "意象4", "意象5"],
+      "avoid_directions": ["避免1", "避免2", "避免3"],
+      "arrangement_tips": "编曲建议"
+    }
+  agent: music_director
+
+writing_task:
+  description: >
+    {skill_prompt}
+    根据上一阶段的歌曲创作简报，为用户的音乐创作需求 {topic} 创作一版中文歌词。
+
+    {instrumental_hint}
+    以下是上一轮审核的分组件反馈意见：
+    ---
+    {feedback}
+    ---
+
+    反馈格式：每行以 [组件名] 开头。
+    - 看到 "✅ [歌词] 已通过" → 直接输出和上一轮相同的歌词，不作任何修改
+    - 看到 "⚠️ [歌词] 需要修改：xxx" → 只修改 xxx 指出的具体问题，其他部分保持原样
+
+    歌词需要有主歌和副歌。主歌负责叙事和铺垫，副歌负责情绪释放和记忆点。
+    不要写成诗歌赏析，也不要写成口号。
+  expected_output: >
+    输出一个 JSON 对象，不要用 ```json``` 代码块包裹，不要加任何解释文字。
+    严格按照以下 JSON 结构输出：
+    {
+      "verse_1": "主歌Verse 1歌词，4-8行",
+      "chorus": "副歌Chorus歌词，4-6行",
+      "verse_2": "主歌Verse 2歌词，4-8行",
+      "bridge": "桥段Bridge歌词，如果没有桥段则填null",
+      "outro": "尾奏歌词，如果没有则填null",
+      "creation_notes": "创作说明",
+      "rhyme_rate": 85
+    }
+  agent: lyricist
+
+arrangement_task:
+  description: >
+    {skill_prompt}
+    根据歌曲创作简报和歌词，为用户的音乐创作需求 {topic} 设计一份完整的编曲方案。
+
+    {instrumental_hint}
+    以下是上一轮审核的分组件反馈意见：
+    ---
+    {feedback}
+    ---
+
+    反馈格式：每行以 [组件名] 开头。
+    - 看到 "✅ [编曲方案] 已通过" → 直接输出和上一轮相同的编曲方案，不作任何修改
+    - 看到 "⚠️ [编曲方案] 需要修改：xxx" → 只修改 xxx 指出的具体问题，其他部分保持原样
+
+    你需要考虑：
+    1. 乐器选择要符合歌曲风格方向和情绪
+    2. 编曲的动态要跟着歌词的情绪曲线走——歌词平静时编曲做减法，歌词激烈时编曲做加法
+    3. 每个段落要有明确的乐器进入/退出策略，避免所有乐器从头响到尾
+    4. 留白也是一种编排——不要害怕在某段只留一件乐器和人声
+  expected_output: >
+    输出一个 JSON 对象，不要用 ```json``` 代码块包裹，不要加任何解释文字。
+    严格按照以下 JSON 结构输出：
+    {
+      "instruments": ["乐器1", "乐器2", "乐器3"],
+      "structure_timeline": "按时间线描述每个段落的编曲安排",
+      "dynamics_plan": "整首歌的强弱动态规划",
+      "mixing_notes": "混音建议",
+      "sfx_suggestions": "环境音效建议，没有则填null",
+      "total_duration": "预计总时长，如3分45秒"
+    }
+  agent: arranger

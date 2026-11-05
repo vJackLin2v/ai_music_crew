@@ -1,0 +1,36 @@
+# ---- 环境 / 依赖（本地虚拟环境与缓存，不入库）----
+.musicenv/
+.svc/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+lib/
+
+# ---- 大体积模型 / 第三方工具 / 素材库 ----
+tools/seed-vc/
+live2d/
+微信开发者工具/
+TMP~/
+~/
+.tmp/
+assets/
+fonts/
+
+# ---- 运行产物 ----
+out/
+output/
+work/
+voice/
+shots/
+*.log
+
+# ---- 密钥 ----
+.env
+.env.*
+!.env.example
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+.DS_Store

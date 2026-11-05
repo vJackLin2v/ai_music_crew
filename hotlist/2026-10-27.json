@@ -1,0 +1,384 @@
+{
+  "qq_rehot": {
+    "name": "",
+    "items": [
+      {
+        "rank": 1,
+        "title": "我好像在哪见过你",
+        "singer": "薛之谦",
+        "album": "初学者",
+        "duration": 279
+      },
+      {
+        "rank": 2,
+        "title": "季候风",
+        "singer": "王菲",
+        "album": "执迷不悔",
+        "duration": 276
+      },
+      {
+        "rank": 3,
+        "title": "天龙八部之宿敌",
+        "singer": "许嵩",
+        "album": "天龙八部之宿敌",
+        "duration": 264
+      },
+      {
+        "rank": 4,
+        "title": "我不难过",
+        "singer": "孙燕姿",
+        "album": "未完成",
+        "duration": 320
+      },
+      {
+        "rank": 5,
+        "title": "NEON",
+        "singer": "A2O LITE、A2O",
+        "album": "NEON",
+        "duration": 208
+      },
+      {
+        "rank": 6,
+        "title": "甲乙丙丁 (你我怎么两清)",
+        "singer": "李佳薇",
+        "album": "甲乙丙丁",
+        "duration": 210
+      },
+      {
+        "rank": 7,
+        "title": "Insomnia",
+        "singer": "RIIZE",
+        "album": "Insomnia",
+        "duration": 194
+      },
+      {
+        "rank": 8,
+        "title": "DESERVE",
+        "singer": "BABYMONSTER",
+        "album": "DESERVE",
+        "duration": 189
+      },
+      {
+        "rank": 9,
+        "title": "雨爱",
+        "singer": "杨丞琳",
+        "album": "雨爱",
+        "duration": 260
+      },
+      {
+        "rank": 10,
+        "title": "恋人",
+        "singer": "李荣浩",
+        "album": "黑马",
+        "duration": 275
+      },
+      {
+        "rank": 11,
+        "title": "我怀念的",
+        "singer": "孙燕姿",
+        "album": "逆光",
+        "duration": 289
+      },
+      {
+        "rank": 12,
+        "title": "演员",
+        "singer": "薛之谦",
+        "album": "绅士",
+        "duration": 261
+      },
+      {
+        "rank": 13,
+        "title": "情歌",
+        "singer": "梁静茹",
+        "album": "静茹 & 情歌 别再为他流泪",
+        "duration": 260
+      },
+      {
+        "rank": 14,
+        "title": "开始懂了",
+        "singer": "孙燕姿",
+        "album": "我要的幸福",
+        "duration": 271
+      },
+      {
+        "rank": 15,
+        "title": "特别的人",
+        "singer": "方大同",
+        "album": "危险世界",
+        "duration": 259
+      },
+      {
+        "rank": 16,
+        "title": "爱错",
+        "singer": "王力宏",
+        "album": "心中的日月",
+        "duration": 238
+      },
+      {
+        "rank": 17,
+        "title": "Always Online",
+        "singer": "林俊杰",
+        "album": "JJ陆",
+        "duration": 225
+      },
+      {
+        "rank": 18,
+        "title": "幻听",
+        "singer": "许嵩",
+        "album": "梦游计",
+        "duration": 273
+      },
+      {
+        "rank": 19,
+        "title": "春娇与志明",
+        "singer": "街道办GDC、欧阳耀莹",
+        "album": "春娇与志明",
+        "duration": 204
+      },
+      {
+        "rank": 20,
+        "title": "You Are All I Need",
+        "singer": "FLY COAST、二宮愛",
+        "album": "Flight Number 001",
+        "duration": 239
+      }
+    ]
+  },
+  "qq_guofeng": {
+    "name": "",
+    "items": [
+      {
+        "rank": 1,
+        "title": "大梦归",
+        "singer": "周深",
+        "album": "兰香如故 影视剧原声带",
+        "duration": 229
+      },
+      {
+        "rank": 2,
+        "title": "水为媒",
+        "singer": "黄龄",
+        "album": "水为媒",
+        "duration": 263
+      },
+      {
+        "rank": 3,
+        "title": "荒",
+        "singer": "平生不晚",
+        "album": "荒",
+        "duration": 252
+      },
+      {
+        "rank": 4,
+        "title": "花开满篱院",
+        "singer": "谭松韵",
+        "album": "兰香如故 影视剧原声带",
+        "duration": 185
+      },
+      {
+        "rank": 5,
+        "title": "月亮桥",
+        "singer": "周深",
+        "album": "月亮桥",
+        "duration": 255
+      },
+      {
+        "rank": 6,
+        "title": "琵琶曲",
+        "singer": "郑浩、冰洁",
+        "album": "琵琶曲",
+        "duration": 235
+      },
+      {
+        "rank": 7,
+        "title": "天龙八部之宿敌",
+        "singer": "许嵩",
+        "album": "天龙八部之宿敌",
+        "duration": 264
+      },
+      {
+        "rank": 8,
+        "title": "牡丹亭",
+        "singer": "浅影阿",
+        "album": "牡丹亭",
+        "duration": 180
+      },
+      {
+        "rank": 9,
+        "title": "一曲微茫",
+        "singer": "郁可唯",
+        "album": "兰香如故 影视剧原声带",
+        "duration": 181
+      },
+      {
+        "rank": 10,
+        "title": "红尘误此生",
+        "singer": "宋晓峰",
+        "album": "红尘误此生",
+        "duration": 225
+      }
+    ]
+  },
+  "bili_covers": [
+    {
+      "rank": 1,
+      "title": "给我们的组合起个名！",
+      "up": "田一名sir",
+      "category": "翻唱",
+      "views": 17870128,
+      "bvid": "BV17VZpY1ENA"
+    },
+    {
+      "rank": 2,
+      "title": "20世纪美国乡村经典民谣《阳光彩虹小白马》",
+      "up": "我太高兴了",
+      "category": "演奏",
+      "views": 5687074,
+      "bvid": "BV1zKZrYAEi8"
+    },
+    {
+      "rank": 3,
+      "title": "\" 阳 光 唢 呐 小 白 马 \"",
+      "up": "浑元Rysn",
+      "category": "演奏",
+      "views": 1644353,
+      "bvid": "BV1RdZEY8E8T"
+    },
+    {
+      "rank": 4,
+      "title": "中国唢呐硬控甲亢哥20秒！没有人能逃得过一首《通天大道宽又阔》！",
+      "up": "民乐也疯狂",
+      "category": "演奏",
+      "views": 1974065,
+      "bvid": "BV16gZpYmEqW"
+    },
+    {
+      "rank": 5,
+      "title": "tia tia 都需要你爱！#不得不爱",
+      "up": "里湘纯子",
+      "category": "翻唱",
+      "views": 1632853,
+      "bvid": "BV1e6ZHYMEtS"
+    },
+    {
+      "rank": 6,
+      "title": "我们俩吉他弹唱～",
+      "up": "屁屁猪ne",
+      "category": "演奏",
+      "views": 1325305,
+      "bvid": "BV1S1oeYbEe1"
+    },
+    {
+      "rank": 7,
+      "title": "今天遇到高手了......",
+      "up": "钢琴波波",
+      "category": "演奏",
+      "views": 7859336,
+      "bvid": "BV1eAZAYDEYC"
+    },
+    {
+      "rank": 8,
+      "title": "将鬼畜动机编成曲 居然只需要这几步？",
+      "up": "楷智吃饱了",
+      "category": "演奏",
+      "views": 1365489,
+      "bvid": "BV1FSZnYVE7P"
+    },
+    {
+      "rank": 9,
+      "title": "声音是从电路板出来的 电路板叫STYLOSETTE 有音色跟效果 就是你链到香蕉上 或者黄瓜上 他也出来这种声 只要物体导电 他就会出声音 物体只是作为一个按键",
+      "up": "那边那个g蛋",
+      "category": "演奏",
+      "views": 3515514,
+      "bvid": "BV1J6ZzYwEJU"
+    },
+    {
+      "rank": 10,
+      "title": "一边打BBOX 一边吃纳豆",
+      "up": "BBoxer酋长",
+      "category": "演奏",
+      "views": 1136419,
+      "bvid": "BV12uZbYkEo5"
+    },
+    {
+      "rank": 11,
+      "title": "第二十九章：恶魔地球！",
+      "up": "蓝色星尘2",
+      "category": "原创音乐",
+      "views": 1053245,
+      "bvid": "BV1t8ZCYsECf"
+    },
+    {
+      "rank": 12,
+      "title": "求求你，别再刀了！B站陈奕迅《跳楼机》真.粤语版",
+      "up": "不是词神",
+      "category": "翻唱",
+      "views": 16187003,
+      "bvid": "BV1daXrY2EPt"
+    },
+    {
+      "rank": 13,
+      "title": "我感觉我在家里直接当起了海盗",
+      "up": "赵赵violin",
+      "category": "演奏",
+      "views": 1223124,
+      "bvid": "BV1hLZzYEEi3"
+    },
+    {
+      "rank": 14,
+      "title": "八番站台 一命速通一镜到底",
+      "up": "上官龍輝",
+      "category": "翻唱",
+      "views": 1236763,
+      "bvid": "BV12sZzYGER9"
+    },
+    {
+      "rank": 15,
+      "title": "猜歌大会【第200弹】",
+      "up": "方块识曲",
+      "category": "原创音乐",
+      "views": 599251,
+      "bvid": "BV1H8ZvYpEdw"
+    },
+    {
+      "rank": 16,
+      "title": "谁懂啊！？唱着唱着本人出现了！！",
+      "up": "Jiaber吴伯滔",
+      "category": "翻唱",
+      "views": 3733519,
+      "bvid": "BV1VuZ5YjECu"
+    },
+    {
+      "rank": 17,
+      "title": "【脑科学】🐶兔毛手袋の小电台｜Feeding & Satiety｜人声cv：Zacky",
+      "up": "Zacky_Y",
+      "category": "翻唱",
+      "views": 174186,
+      "bvid": "BV1WJZYYHEgg"
+    },
+    {
+      "rank": 18,
+      "title": "沉浸式假装一对男女在唱“我们好像在哪见过”",
+      "up": "沙拉拉发",
+      "category": "翻唱",
+      "views": 1193951,
+      "bvid": "BV1nvXLYSEVC"
+    },
+    {
+      "rank": 19,
+      "title": "一首《GGbond》人群炸开花",
+      "up": "魔人周干",
+      "category": "演奏",
+      "views": 1295895,
+      "bvid": "BV1PpQ8YFEMP"
+    },
+    {
+      "rank": 20,
+      "title": "“初见她，漫步溪桥下”《相思遥》绝美戏腔翻唱！",
+      "up": "咻咻满",
+      "category": "翻唱",
+      "views": 1305828,
+      "bvid": "BV1FAfPYeE4P"
+    }
+  ]
+}

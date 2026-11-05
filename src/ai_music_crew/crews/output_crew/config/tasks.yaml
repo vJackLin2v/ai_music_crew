@@ -1,0 +1,70 @@
+melody_task:
+  description: >
+    {suno_override_hint}
+    
+    你是一个 Suno AI 音乐生成提示词专家。根据歌曲创作简报、歌词和编曲方案，
+    为 {topic} 生成一条高质量的 Suno 音乐生成提示词。
+
+    {instrumental_hint}
+    以下是上一轮审核的反馈意见，如果有内容，请认真参考并针对性调整：
+    ---
+    {feedback}
+    ---
+
+    你的任务：
+    1. 综合简报中的情绪/风格/调式/BPM，编曲方案中的乐器/动态，生成一段英文音乐描述（Suno Style Prompt）
+    2. 将歌词整理成 Suno 格式（用 [Verse 1]/[Chorus]/[Verse 2]/[Bridge]/[Outro] 标记）
+
+    Suno Style Prompt 编写原则：
+    - 用英文描述：音乐风格 + 情绪 + 乐器 + 节奏 + 氛围
+    - 具体不要笼统："erhu, guzheng, piano, female ethereal vocal, 70 BPM" 比 "Chinese song" 好
+    - 包含 BPM 和调式信息
+    - 控制在 30-60 个英文单词
+    - 参考格式: "melancholic Chinese ballad, erhu, piano, female vocal, 65 BPM, cinematic, emotional"
+  expected_output: >
+    输出一个 JSON 对象，不要用 ```json``` 代码块包裹，不要加任何解释文字。
+    {
+      "suno_style_prompt": "英文音乐描述，30-60词",
+      "suno_lyrics": "[Verse 1]\\n歌词...\\n\\n[Chorus]\\n副歌...\\n\\n[Verse 2]\\n歌词..."
+    }
+  agent: suno_designer
+
+editing_task:
+  description: >
+    审核前面生成的歌曲创作简报、歌词草稿、编曲方案和 Suno 提示词，
+    判断它们是否符合用户需求：{topic}
+
+    {instrumental_hint}
+    以下是上一轮的分组件反馈意见：
+    ---
+    {feedback}
+    ---
+
+    你要对以下四个组件**分别**给出审核意见：
+    1. 创作简报(brief)：方向是否正确、调式/BPM/情绪是否合理
+    2. 歌词(lyrics)：意象、押韵、情绪递进、记忆点
+    3. 编曲方案(arrangement)：乐器搭配、动态规划、整体听感
+    4. Suno提示词(suno)：是否准确反映调式/情绪/乐器/BPM，是否具体不笼统
+
+    关键规则：
+    - **每个组件独立判断**——简报好但歌词差，就只标歌词需要修改
+    - **已通过组件**保留"已通过"状态，下一轮的 Agent 看到后会保持该组件不变
+    - **反馈要具体**——不要只说"不够好"，要说清楚缺什么、怎么改
+    - **根据评分判断**——8分及以上为"通过"，8分以下为"需要修改"
+  expected_output: >
+    输出一个 JSON 对象，不要用 ```json``` 代码块包裹，不要加任何解释文字。
+    每个组件给出 score(1-10) + verdict(自动根据 score 判定) + issues：
+    {
+      "brief": {"score": 8, "verdict": "通过", "issues": []},
+      "lyrics": {"score": 6, "verdict": "需要修改", "issues": ["副歌Hook记忆点不够强"]},
+      "arrangement": {"score": 8, "verdict": "通过", "issues": []},
+      "suno": {"score": 7, "verdict": "需要修改", "issues": ["英文描述太笼统"]},
+      "overall_score": 7
+    }
+    评分标准：
+    - 9-10：专业水准，无需任何修改
+    - 8：达标，无实质问题
+    - 6-7：有可改进之处但方向正确
+    - 5及以下：明显问题，需要重新思考
+    - 文档性评分：给 6-7 的情况代表方向正确但细节不足，具体写清楚哪里不足
+  agent: reviewer
